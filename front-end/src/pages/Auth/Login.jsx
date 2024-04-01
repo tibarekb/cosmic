@@ -1,31 +1,36 @@
 import React from "react";
+import "../../styles/Login.css"
 
 const Login = () => {
     return (
         <div className="container">
             <div className="header">
                 <div className="text">Login</div>
-                <div className="underline"></div>
+            </div>
+
+            <div className="headline">
+                <p>
+                    You will be redirected to home <br /> page 
+                </p>
+                
             </div>
 
             <div className="inputs">
+            
             <div className="input">
-                <img src="" alt="" />
-                <input type="text" />
+                <input type="text" placeholder="Username"/>
             </div>
 
             <div className="input">
-                <input type="text" />
-            </div>
-
-            <div className="input">
-                <input type="password" />
+                <input type="password" placeholder="Password" />
             </div>
             
             <div className="submit-container">
-                <div className="submit">Login</div>
+                <div className="submit">Submit</div>
             </div>
             </div>
             </div>
     )
 }
+
+export default Login

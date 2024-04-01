@@ -1,12 +1,32 @@
 import react from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Login from "./pages/Auth/Login"
-import NotFound from "./pages/Auth/NotFound"
-import ProtectedRoute from "./components/ProtectedRoute"
+
+function Logout(){
+  localStorage.clear()
+  return <Navigate to="/login/" />
+}
 
 function App(){
-  <Route path="/login" element={<Login />}></Route>
+  return (
+    <BrowserRouter>
+    <Routes>
+      
+    <Route path="/login" element={<Login />} />
+    
+    </Routes>
+    </BrowserRouter>
+  )
 }
+
+// function App(){
+//   return (
+//     <div>
+//       <Home/>
+//     </div>
+    
+//   )
+// }
 
 
 // function App() {
